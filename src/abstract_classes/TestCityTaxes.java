@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import org.junit.Test;
 
 public class TestCityTaxes {
-
+	
 	@Test
 	public void testPrjections() {
 		ArrayList<City> cities = new ArrayList<City>();
