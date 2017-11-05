@@ -10,7 +10,7 @@ public class TestInterfaces {
 	public void testBackwardsString() {
 		SpecialString bs = new BackwardsString("This is a test");
 		System.out.println(bs);
-		assertEquals("tset a si sihT", bs.toString());
+		assertEquals("tset a si sihT", bs.funkifyText("This is a test"));
 	}
 	
 	@Test
