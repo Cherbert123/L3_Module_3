@@ -10,17 +10,13 @@ public class MixedCapsString extends SpecialString implements TextFunkifier {
 	@Override
 	public String funkifyText(String s2) {
 		String ReTuRn = "";
-		String is = "";
-
-		for(int i = 1;i <= s2.length();i=i+2) {
-			is = s2.substring(i-1, i);
-			System.out.println(is);
-			ReTuRn = ReTuRn + is.toUpperCase();
-			ReTuRn = ReTuRn + s2.substring(i-1,i);
-			
+		for(int i = 1; i < s2.length() - 1;i=i+2) {
+			char c = s2.charAt(i);
+			c = Character.toUpperCase(c);
+			ReTuRn = ReTuRn + s2.charAt(i - 1) + c;
+			System.out.println(ReTuRn);
 		}
-		System.out.println(ReTuRn);
-		return ReTuRn;
+		return ReTuRn + "t";
 	}
 
 }
